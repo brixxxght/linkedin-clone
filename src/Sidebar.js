@@ -2,6 +2,7 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import "./Sidebar.css";
 import coverPhoto from "./myavatar.jpeg";
+import myPhoto from "./avatar.jpeg";
 
 const Sidebar = () => {
 
@@ -16,9 +17,10 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
+
       <div className="sidebar__top">
         <img src={coverPhoto} alt="cover" />
-        <Avatar className="sidebar__avatar" />
+        <Avatar className="sidebar__avatar" src={myPhoto}/>
         <h2>Bright Green</h2>
         <h4>greenbrightsmart@gmail.com</h4>
       </div>
@@ -40,9 +42,10 @@ const Sidebar = () => {
         {recentItem('javascript')}
         {recentItem('front-end')}
         {recentItem('design')}
-        {recentItem('developer')}
+        {recentItem('software engineering')}
         {recentItem('style')}
       </div>
+      
     </div>
   );
 };
